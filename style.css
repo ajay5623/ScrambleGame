@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.cantainer{
+  width: 100vw;
+  height: 100vh;
+  background-color: aquamarine;
+  position: relative;
+
+}
+.main{
+  width: 40vw;
+  height: 65vh;
+  background-color:royalblue;
+ left: 50%;
+ top: 50%;
+  transform:translate(-50%,-50%);
+ position: absolute;
+}
+h1,h3{
+ text-align: center;
+}
+.disRan{
+    text-align: center;
+    margin: 20px;
+    font-size: 20px;
+}
+input{
+   text-align: center;
+   width: 20vw;
+   height: 25px;
+   margin-top: 20px;
+   display: block;
+   margin: auto;
+   border: 2px solid black;
+   border-radius: 10px;
+   font-size: 20px;
+}
+
+
+.btn,.resultbtn {
+  margin: 20px;
+  display: block;
+  margin: auto;
+  width: 20vw;
+  height: 25px;
+  background-color: black;
+  color: white;
+  border-radius: 10px; 
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: rgb(164, 73, 73);
+    
+}
+.resultbtn:hover{
+    cursor: pointer;
+    background-color: chartreuse;
+    color: black;
+}
+
+.yourscore , .score{
+ text-align: center;
+ font-size:25px;
+ background-color: coral;  
+ margin-top: 20px;
+ display: block;
+ margin: auto; 
+ width:15vw;
+}
+  
+@media(max-width:480px){
+    .main{
+        width:100vw;
+        height:85vh;
+        background-color:royalblue;
+       left:0%;
+       top:0%;
+        transform:translate(-0%,-0%);
+       position: absolute;
+       margin-top: 15vh;
+      }
+  input, .btn,.resultbtn {
+    width: 70vw;
+  }    
+  .yourscore , .score{
+    width: 40vw;
+  }
+}
+
+@media(max-width:768px) and (min-width:481px){
+  .main{
+    width:80vw;
+    height:78vh;
+   
+   
+  }
+  input, .btn,.resultbtn {
+    width: 40vw;
+  }    
+  .yourscore , .score{
+    width: 30vw;
+  }
+  }
+
+  @media(max-width:1024px) and (min-width:769px){
+    .main{
+      width:65vw;
+      height:76vh;
+     
+     
+    }
+    input, .btn,.resultbtn {
+      width: 40vw;
+    }    
+    .yourscore , .score{
+      width: 30vw;
+    }
+    }
+
+    @media(max-width:1200px) and (min-width:1025px){
+        .main{
+          width:70vw;
+          height:40vh;
+         left:0%;
+         top:0%;
+          transform:translate(-0%,-0%);
+         position: absolute;
+         margin: 10vh;
+         
+        }
+        input, .btn,.resultbtn {
+          width: 40vw;
+        }    
+        .yourscore , .score{
+          width: 30vw;
+        }
+        }
